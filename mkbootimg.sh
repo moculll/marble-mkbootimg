@@ -19,11 +19,12 @@ SCRIPT_FOR_RUN=${MKBOOTIMG_PY}
 
 function print_help {
     echo "Usage: $0 [-h] [-u unpack_img_path] [-r ramdisk_path] [-k kernel_path] [-s]"
-    echo "example0: $0"
-    echo "example1: $0 -u ./boot.img"
-    echo "example2: $0 -r boot_sources/ramdisk_2"
-    echo "example3: $0 -s ./key_rsa2048.pem"
-    echo "example4: $0 -s ./key_rsa2048.pem -r ramdisk_3"
+    echo "example for making a deault img: $0"
+    echo "example for unpacking boot.img: $0 -u ./boot.img"
+    echo "example for making an img while replacing the ramdisk: $0 -r boot_sources/ramdisk_2"
+    echo "example for using a custom kernel: $0 -k ./boot_sources/kernel_2"
+    echo "example for using a custom signature_key: $0 -s ./key_rsa2048.pem"
+    echo "example for using custon signature_key and ramdisk: $0 -s ./key_rsa2048.pem -r ramdisk_3"
     echo "Options:"
     echo "  -h, [help]     Show this help message and exit"
     echo "  -u, [unpack]   unpack a boot img in ./boot_sources"
